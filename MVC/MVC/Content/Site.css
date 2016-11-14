@@ -22,3 +22,8 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.jumbotron {
+    background-image: url('../Images/8McGregor.jpg');
+    background-size: cover;
+}
