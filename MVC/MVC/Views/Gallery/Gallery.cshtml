@@ -1,0 +1,12 @@
+﻿@model List<MVC.Models.Photo>
+@{
+    ViewBag.Title = "Gallery";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@foreach (var photo in Model)
+{
+    <img src="/Images/@photo.PhotoName"/>
+}
+
