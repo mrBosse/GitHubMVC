@@ -246,6 +246,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Gallery\Gallery.cshtml" />
+    <Content Include="Views\Error.cshtml" />
+    <Content Include="Views\Gallery\Showimage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

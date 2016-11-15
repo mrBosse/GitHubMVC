@@ -8,5 +8,9 @@
 @foreach (var photo in Model)
 {
     <img src="/Images/@photo.PhotoName"/>
+    <div>
+        @Html.ActionLink("Show Picture", "Showimage", "Gallery", new {id=photo.Id},null)
+    </div>
 }
+
 

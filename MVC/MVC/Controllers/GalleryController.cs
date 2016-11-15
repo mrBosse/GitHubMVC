@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.Owin.Security;
 using MVC.Models;
 
 namespace MVC.Controllers
 {
     public class GalleryController : Controller
     {
+        static List<Photo> photos = new List<Photo>();
         // GET: Gallery
-        public ActionResult Gallery()
+        public GalleryController()
         {
-            List<Photo> photos = new List<Photo>();
-
             photos.Add(new Photo { PhotoName = "1McGregor.jpg" });
             photos.Add(new Photo { PhotoName = "2McGregor.jpg" });
             photos.Add(new Photo { PhotoName = "3McGregor.jpg" });
@@ -26,6 +26,12 @@ namespace MVC.Controllers
 
 
             return View(photos);
+        }
+
+        public ActionResult Showimage(int id)
+        {
+            var showphoto = ph
+            return View();
         }
     }
 }

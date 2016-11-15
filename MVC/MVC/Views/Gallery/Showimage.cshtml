@@ -1,0 +1,21 @@
+﻿@model MVC.Models.Photo
+@{
+    ViewBag.Title = "Showimage";
+}
+
+<h2>Showimage</h2>
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="img-thumbnail">
+            <img src="/Images/@Model.PhotoName"/>
+            <div class="carousel-caption">
+                <h3>@Model.PhotoName</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
